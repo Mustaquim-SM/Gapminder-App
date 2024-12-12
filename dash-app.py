@@ -13,6 +13,7 @@ gapminder = pd.read_csv(url)
 # Create the Dash app
 app = Dash(__name__)
 app.title = "Gapminder Dashboard"
+server = app.server
 
 # App layout with multiple tabs
 app.layout = html.Div([
